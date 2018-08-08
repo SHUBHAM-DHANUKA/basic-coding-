@@ -1,0 +1,18 @@
+#print("hi i am good")
+n = int(input("Enter the no of zombie"))
+be= int(input("Enter bob Energy "))
+ze = list()
+for i in range(n):
+    z = int(input("Enter Zombie Energy"))
+    ze.append(z)
+print(ze)
+print("<<<Break >>>>")
+print("Bob is fighting with zombie")
+for i in range(n):
+    for j in ze:
+        
+        be = be - ((j%2)+(j/2))
+if be< 0:
+    print("Bob will die ")
+else:
+    print("Bob won")
