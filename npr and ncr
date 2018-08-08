@@ -1,0 +1,17 @@
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+n = int(input("Enter no:"))
+r = int(input("Enter no:"))
+
+p=factorial(n)
+q=factorial(n-r)
+s = factorial(r)
+#print(factorial(n))
+#print()
+print("npr is ", p/q)
+print("ncr is ", p/(q*s) )
