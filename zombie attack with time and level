@@ -1,0 +1,30 @@
+tc= int(input("enter the no of test case "))
+for i in range(tc):
+    n = int(input("Enter the no of zombie"))
+    t = int(input("enter the tsime for the game "))
+     
+    li =list()
+    for i in range(n):
+        ze = int(input("enter the energy of zombie"))
+        li.append(ze)
+    be= int(input("enter the bob energy"))
+    le = int(input("minimum energy require to clear that level"))
+    for i in range(n):
+        se = int (input("enter the zombie you want to find"))
+        re = be - li[se-1]
+        t = t-1
+        if t >= 0:
+            if re > 0:
+                be = be + re 
+                print("bob energy ", be)
+                print("bob won from zombie",se)
+            else:
+                print("bob died ")
+        else:
+            print("sorry to say but fuck off !")
+       
+    if be >= le:
+        print("bob will clear the level")
+    else:
+        print("GAME OVER ")
+    
