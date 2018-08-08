@@ -1,0 +1,26 @@
+#print("Face now code vita traning programme")
+t = int(input('enter use case'))
+for i in range(t):
+    n= input("enter string ")
+    li =list(n)
+#print(len(li))
+    n = len(li)//2
+#li1= li[:n]
+#print(li1)
+#li2= li[n:]
+#print(li2)
+#print(n)
+    li1=list()
+    for i in range(n):
+        if li[i]== li[-(i+1)]:
+            li1.append(i)
+        else:
+            pass
+
+    if len(li1)==n:
+        print("yes")
+    else:
+        print("no") 
+   
+        
+
