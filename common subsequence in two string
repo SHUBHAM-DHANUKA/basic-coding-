@@ -1,0 +1,6 @@
+m = input("enter first string ")
+n = input("enter second string ")
+li=list(set(m)&set(n))
+li.sort()
+print(li)
+
