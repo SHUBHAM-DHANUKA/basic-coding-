@@ -1,0 +1,14 @@
+n = int(input("enter length of no"))
+li =list()
+for i in range(n):
+    num = int(input("enter the no"))
+    li.append(num)
+    li.sort()
+ki = int(input("enter range of list"))
+try:
+    if ki > len(li):
+        raise ValueError("fuck off!")
+    else:
+        print(li[:ki])
+except ValueError as er:
+    print(er)
